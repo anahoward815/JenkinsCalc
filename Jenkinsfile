@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "YourDockerUser/my_java_application"
+    registry = "ahoward815/jenkins_calculator_app"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
