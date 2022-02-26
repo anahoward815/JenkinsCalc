@@ -6,14 +6,13 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         Calculator calculator = new Calculator();
-        String command = "";
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("welcome to the calculator");
-        while (!command.equals("end")) {
-            System.out.println("Enter a command");
+        System.out.println("Enter a command");
+        String command = br.readLine();
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            command = br.readLine();
+        while (!command.equals("end")) {
 
             System.out.println("Enter the first number");
             int num1 = Integer.parseInt(br.readLine());
@@ -39,6 +38,8 @@ public class Main {
             } else if (command.equals("intToBinaryNumber")) {
                 System.out.println("Result: " + calculator.intToBinaryNumber(num1));
             }
+            System.out.println("Enter a command");
+            command = br.readLine();
         }
     }
 }
