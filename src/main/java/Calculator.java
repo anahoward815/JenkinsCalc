@@ -62,7 +62,7 @@ class Calculator {
     Create a completely unique String identifier for a given string
     Each createdID must contain the string n in its unaltered Form
     if String n = "Jason"
-    then the created ID could be = Jasonklfgn3jknnvksdfm - Because it contains the unaltered String n and is unique
+    then the created ID could be = Jasonklfgn3jknnvksdfn - Because it contains the unaltered String n and is unique
 
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
